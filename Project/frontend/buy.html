@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h3>SV Shop</h3>
+    <div id="summary">
+      <p><strong>Total Products:</strong> <span id="totalProducts">0</span></p>
+      <p><strong>Total Price:</strong> $<span id="totalPrice">0</span></p>
+    </div>
+    <div id="button-group">
+      <button type="button" onclick="approvePurchase()" style="flex: 1; margin-left: 5px;">Approve</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="buy.js"></script>
+</body>
+</html>

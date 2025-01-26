@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SV Shop - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SV Shop</h1>
+    <form id="loginForm">
+      <input type="user" id="user" placeholder="user" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <div id="button-group">
+        <button type="button" onclick="handleSignin()" style="flex: 1; margin-right: 5px;">Signin</button>
+        <button type="button" onclick="redirectToSignup()" style="flex: 1; margin-left: 5px;">Signup</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

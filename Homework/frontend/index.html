@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Management</h1>
+
+    <h2>Add Employee</h2>
+    <input id="name" placeholder="Name">
+    <input id="department" placeholder="Department">
+    <input id="age" type="number" placeholder="Age">
+    <input id="salary" type="number" placeholder="Salary">
+    <button onclick="addEmployee()">Add Employee</button>
+
+    <h2>Delete Employees by Age</h2>
+    <input id="deleteAge" type="number" placeholder="Age">
+    <button onclick="deleteEmployeesByAge()">Delete</button>
+
+    <h2>Update Department</h2>
+    <input id="oldDepartment" placeholder="Old Department">
+    <input id="newDepartment" placeholder="New Department">
+    <button onclick="updateDepartment()">Update</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

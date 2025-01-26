@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin</h1>
+    <div id="orders" >
+      <button onclick="fetchOrders()">Fetch All Orders</button>
+    </div>
+    
+    <div>
+    <h2>Add Product</h2>
+    <form id="addProductForm">
+      <input type="text" id="productName" placeholder="Product Name" required />
+      <input type="number" id="productPrice" placeholder="Product Price" required /> 
+      <button type="button" onclick="addProduct()" style="flex: 1; margin-left: 5px;">Add Product</button>
+    </form>
+
+    <h2>Remove Product</h2>
+    <form id="delProductForm">
+      <input type="text" id="delProductName" placeholder="Product Name" required />
+      <button type="button" onclick="delProduct()" style="flex: 1; margin-left: 5px;">Remove Product</button>
+    </form>
+
+    <div class="row">
+      <div>
+        <h3>Products</h3>
+      </div>
+      <div>
+        <button onclick="fetchProducts()">Update</button>
+      </div>
+    </div>
+
+    <div class="row" id="table" >
+      <table id="productTable" class="product-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

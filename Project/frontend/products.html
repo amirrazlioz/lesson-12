@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="product-container">
+    
+    <div class="row">
+      <div>
+        <select id="sort">
+          <option value="name">Name</option>
+          <option value="price">Price</option>
+        </select>
+      </div>
+      <div>
+        <h3>SV Shop</h3>
+      </div>
+      <div>
+        <button onclick="fetchProducts()">Sort</button>
+      </div>
+    </div>
+
+    <div class="row" id="table" >
+      <table id="productTable" class="product-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    
+    <div id="row">
+      <button type="button" onclick="goToBuyPage()" style="flex: 1; margin-left: 5px;">Buy</button>
+    </div>
+
+    <div id="row">
+      <button type="button" onclick="cleanCart()" style="flex: 1; margin-left: 5px;">Clean Cart</button>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="products.js"></script>
+</body>
+</html>
